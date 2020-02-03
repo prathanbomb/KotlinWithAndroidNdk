@@ -1,6 +1,6 @@
-package com.ihorkucherenko.inmemorystorage
+package th.co.digio.inmemorystorage
 
-import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.runner.AndroidJUnit4
 import org.junit.Assert.*
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -15,7 +15,7 @@ import java.util.*
 @RunWith(AndroidJUnit4::class)
 class ExampleInstrumentedTest {
 
-    val store = Store()
+    private val store = Store()
 
     @Test
     fun storeObject() {
