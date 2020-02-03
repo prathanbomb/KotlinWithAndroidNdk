@@ -1,24 +1,19 @@
-package com.ihorkucherenko.inmemorystorage
+package th.co.digio.inmemorystorage
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.ihorkucherenko.storage.Store
-import android.widget.Toast
 import android.view.View
 import android.widget.ArrayAdapter
-import android.widget.Spinner
 import android.widget.EditText
-
-/**
-* Created by ihor_kucherenko on 6/22/17.
-* https://github.com/KucherenkoIhor
-*/
+import android.widget.Spinner
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import th.co.digio.storage.Store
 
 class MainActivity : AppCompatActivity() {
 
-    private val etKey by lazy { findViewById(R.id.editTextKey) as EditText }
-    private val etValue by lazy { findViewById(R.id.editTextValue) as EditText }
-    private val spinner by lazy { findViewById(R.id.spinner) as Spinner }
+    private val etKey by lazy { findViewById<EditText>(R.id.editTextKey) }
+    private val etValue by lazy { findViewById<EditText>(R.id.editTextValue) }
+    private val spinner by lazy { findViewById<Spinner>(R.id.spinner) }
 
     private val store = Store()
 
@@ -71,13 +66,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, e.localizedMessage, Toast.LENGTH_LONG).show()
             e.printStackTrace()
         }
-
     }
 
     fun onCheckKeyClick(view: View) {
         val key = etKey.text.toString()
         val isHasEntry = store.hasEntry(key)
-        Toast.makeText(this, "has entry: " + isHasEntry, Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "has entry: $isHasEntry", Toast.LENGTH_SHORT).show()
     }
 
 }

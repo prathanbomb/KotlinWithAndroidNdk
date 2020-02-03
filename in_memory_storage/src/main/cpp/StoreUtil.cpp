@@ -1,6 +1,3 @@
-//
-// Created by Ihor Kucherenko on 6/22/17.
-//
 #include "StoreUtil.h"
 #include "Store.h"
 #include <cstdlib>

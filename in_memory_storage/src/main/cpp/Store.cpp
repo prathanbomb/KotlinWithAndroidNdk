@@ -1,6 +1,3 @@
-//
-// Created by Ihor Kucherenko on 6/22/17.
-//
 #include <jni.h>
 #include <string>
 
@@ -27,7 +24,7 @@ extern "C" JNIEXPORT jint JNI_OnLoad(JavaVM* vm, void* reserved)
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_ihorkucherenko_storage_Store_getCount(
+Java_th_co_digio_storage_Store_getCount(
         JNIEnv* env,
         jobject /* this */) {
     return gStore.mLength;
@@ -35,7 +32,7 @@ Java_com_ihorkucherenko_storage_Store_getCount(
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_ihorkucherenko_storage_Store_getString(
+Java_th_co_digio_storage_Store_getString(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -50,7 +47,7 @@ Java_com_ihorkucherenko_storage_Store_getString(
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_ihorkucherenko_storage_Store_getInteger(
+Java_th_co_digio_storage_Store_getInteger(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -64,7 +61,7 @@ Java_com_ihorkucherenko_storage_Store_getInteger(
 
 extern "C"
 JNIEXPORT jfloat JNICALL
-Java_com_ihorkucherenko_storage_Store_getFloat(
+Java_th_co_digio_storage_Store_getFloat(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -78,7 +75,7 @@ Java_com_ihorkucherenko_storage_Store_getFloat(
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_ihorkucherenko_storage_Store_getBoolean(
+Java_th_co_digio_storage_Store_getBoolean(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -92,7 +89,7 @@ Java_com_ihorkucherenko_storage_Store_getBoolean(
 
 extern "C"
 JNIEXPORT jshort JNICALL
-Java_com_ihorkucherenko_storage_Store_getShort(
+Java_th_co_digio_storage_Store_getShort(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -106,7 +103,7 @@ Java_com_ihorkucherenko_storage_Store_getShort(
 
 extern "C"
 JNIEXPORT jdouble JNICALL
-Java_com_ihorkucherenko_storage_Store_getDouble(
+Java_th_co_digio_storage_Store_getDouble(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -120,7 +117,7 @@ Java_com_ihorkucherenko_storage_Store_getDouble(
 
 extern "C"
 JNIEXPORT jlong JNICALL
-Java_com_ihorkucherenko_storage_Store_getLong(
+Java_th_co_digio_storage_Store_getLong(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -134,7 +131,7 @@ Java_com_ihorkucherenko_storage_Store_getLong(
 
 extern "C"
 JNIEXPORT jbyte JNICALL
-Java_com_ihorkucherenko_storage_Store_getByte(
+Java_th_co_digio_storage_Store_getByte(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -148,7 +145,7 @@ Java_com_ihorkucherenko_storage_Store_getByte(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setString(
+Java_th_co_digio_storage_Store_setString(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -170,7 +167,7 @@ Java_com_ihorkucherenko_storage_Store_setString(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setInteger(
+Java_th_co_digio_storage_Store_setInteger(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -184,7 +181,7 @@ Java_com_ihorkucherenko_storage_Store_setInteger(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setObject(
+Java_th_co_digio_storage_Store_setObject(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -201,7 +198,7 @@ Java_com_ihorkucherenko_storage_Store_setObject(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setFloat(
+Java_th_co_digio_storage_Store_setFloat(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -215,7 +212,7 @@ Java_com_ihorkucherenko_storage_Store_setFloat(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setShort(
+Java_th_co_digio_storage_Store_setShort(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -229,7 +226,7 @@ Java_com_ihorkucherenko_storage_Store_setShort(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setLong(
+Java_th_co_digio_storage_Store_setLong(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -243,7 +240,7 @@ Java_com_ihorkucherenko_storage_Store_setLong(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setDouble(
+Java_th_co_digio_storage_Store_setDouble(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -257,7 +254,7 @@ Java_com_ihorkucherenko_storage_Store_setDouble(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setByte(
+Java_th_co_digio_storage_Store_setByte(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -271,7 +268,7 @@ Java_com_ihorkucherenko_storage_Store_setByte(
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_com_ihorkucherenko_storage_Store_setBoolean(
+Java_th_co_digio_storage_Store_setBoolean(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey,
@@ -285,7 +282,7 @@ Java_com_ihorkucherenko_storage_Store_setBoolean(
 
 extern "C"
 JNIEXPORT jobject JNICALL
-Java_com_ihorkucherenko_storage_Store_getObject(
+Java_th_co_digio_storage_Store_getObject(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {
@@ -297,11 +294,9 @@ Java_com_ihorkucherenko_storage_Store_getObject(
     }
 }
 
-
-
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_ihorkucherenko_storage_Store_hasEntry(
+Java_th_co_digio_storage_Store_hasEntry(
         JNIEnv* pEnv,
         jobject pThis,
         jstring pKey) {

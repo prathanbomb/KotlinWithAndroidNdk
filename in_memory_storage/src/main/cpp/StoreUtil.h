@@ -1,7 +1,3 @@
-//
-// Created by Ihor Kucherenko on 6/22/17.
-//
-
 #ifndef INMEMORYSTORAGE_STOREUTIL_H
 #define INMEMORYSTORAGE_STOREUTIL_H
 
